@@ -102,10 +102,16 @@ console.log(veggieAddClass)
 // 10: Remove class 'veggie-item' from 'spinach'
 
 // ... your code here
-
+/*
 const removeVeggieItem = Array.from(document.querySelectorAll(".list-veggies ul li"))
 
-removeVeggieItem[3].classList.remove("veggie-item")
+removeVeggieItem[3].classList.remove("veggie-item")*/
 
+const removeVeggieItem = Array.from(document.querySelectorAll(".list-veggies"))
+
+removeVeggieItem.forEach((element) => {
+    if (element.innerText === "Spinach") return removedVeggiesItem1.classList.remove("veggie-item")})
+
+console.log(removeVeggieItem)
 
 // => ... <li class="veggie-love">Spinach</li>
